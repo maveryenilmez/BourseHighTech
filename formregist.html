@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/formstyle.css">
+    <title>Formulaire d'inscription</title>
+</head>
+<body>
+    
+    <header>FORMULAIRE D'INSCRIPTION</header>
+
+    <form id="formRegist" action="form.html" method="post">
+
+        <div>
+            <input class="standard" required id="companyName" type="text" placeholder="COMPANY NAME">
+        </div>
+
+        <div>
+            <input class="standard" required id="siret" type="number" placeholder="SIRET">
+        </div>
+
+        <div>
+            <input class="standard" required id="email" type="text" placeholder="E-MAIL">
+        </div>
+        
+        <div class="fix">
+            <label for="civility">CIVILITY :</label>
+                <input class="radio" checked id="civility" type="radio" name="civility">
+                <label>MRS</label>
+                <input class="radio" id="civility" type="radio" name="civility">
+                <label>MR.</label>
+        </div>
+        
+        <div>
+            <input class="standard" required id="nameRegist" type="text" placeholder="NAME">
+        </div>
+
+        <div>
+            <input class="standard" required id="firstName" type="text" placeholder="FIRST NAME">
+        </div>
+
+        <div>
+            <input class="standard" id="positionHeld" type="text" placeholder="POSITION HELD">
+        </div>
+
+        <div>
+            <div class="fix">
+                <label for="adressCompany">ADRESS COMPANY :</label>
+            </div>
+            <input class="standard" id="adressCompany" type="number" placeholder="NUMBER">
+            <input class="standard" id="adressCompany" type="text" placeholder="PATH">
+            <input class="standard" id="postalCode" type="number" placeholder="POSTAL CODE">
+            <input class="standard" id="countryName" type="text" placeholder="COUNTRY NAME">
+        </div>
+
+        <div>
+            <input id="submit" type="submit" value="SEND !">
+        </div>
+
+    </form>
+
+</body>
+</html>
