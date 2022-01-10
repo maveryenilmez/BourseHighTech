@@ -9,7 +9,7 @@ body {
   background-color: black;
 }
 
-img {
+#logo {
   width: 200px;
 }
 
@@ -149,21 +149,25 @@ li:hover:after {
 .landingPage {
   height: 70vh;
   display: flex;
+  flex-wrap: wrap;
   background: url(/assets/img/unknown3);
   background-size: cover;
   background-position: center;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
-.container1 {
-  width: 60%;
-  height: 70vh;
+/* Attention les containers 1 et 2 sera renommé et il faut penser à modifier sur CSS aussi */
+#pictureEvent {
+  /* width: 60%; */
+  /* height: 70vh; */
   background: black;
   opacity: 0.9;  
 }
 
-.container2 {
-  width: 40%;
-  height: 70vh;
+#descrip {
+  /* width: 40%; */
+  /* height: 70vh; */
   background: black;
   opacity: 0.9;
 }
@@ -174,32 +178,25 @@ a {
   color: white;
   }
 
-.socialNetwork {
-  height: 150px;
-  width: 150px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  
+@media screen and (min-width: 720px) {
+  .socialNetwork {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+  }
+  .insta, .fb, .twit {
+    width: 45px;
+    height: 45px;
+    opacity: 0.5;
+  }
 }
-
-.insta {
+.insta, .fb, .twit {
   width: 45px;
   height: 45px;
-  opacity: 0.5;
-}
-
-.fb {
-  width: 45px;
-  height: 45px;
-  opacity: 0.5;
-}
-
-.twit {
-  width: 45px;
-  height: 45px;
-  opacity: 0.5;
-}
+  opacity: 0.5;}
 
 .description{
   color: white;
@@ -222,3 +219,8 @@ img.event{
 strong {
 color: #7ED957;;
 }
+
+p{
+  color: white;
+}
+
