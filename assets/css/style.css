@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-body main {
+bakcy main {
   margin: 0;
   padding: 0;
 }
@@ -60,7 +60,7 @@ li:hover::before, li:hover::after {
   background: #6aff4c;
   border-radius: 75px;
   z-index: -1;
-  animation: 1s clockwise infinite;
+  animation: 1s clockwise infinite ;
 }
   
 li:hover:after {
@@ -172,36 +172,35 @@ a {
   color: white;
   }
 
+  @media screen and (min-width: 720px){
+  
 .socialNetwork {
   height: 150px;
-  width: 100%;
-  align-self: flex-end;
+  width: 150px;
+  align-self: absolute;
+  bottom: 0;
+  left: 0;
 }
-
-.insta {
+  .insta , .fb, .twit{
+  width: 45px;
+  height: 45px;
+  opacity: 0.5;
+}
+}
+.insta , .fb, .twit{
+  margin-right: 0px;
   width: 45px;
   height: 45px;
   opacity: 0.5;
 }
 
-.fb {
-  width: 45px;
-  height: 45px;
-  opacity: 0.5;
-}
-
-.twit {
-  width: 45px;
-  height: 45px;
-  opacity: 0.5;
-}
 
 #demo {
   width: 400px;
   height: 100px;
-  color: #6aff4c;
+  color: #824cff;
   position: absolute;
-  font-size: 50px;
+  font-size: 40px;
   font-family: "Montserrat";
   background-color: black;
   display: flex;
@@ -218,4 +217,8 @@ a {
   width: 100%;
   margin-left: 100px;
   margin-top: 10px;
+}
+
+i{
+  color: white;
 }
