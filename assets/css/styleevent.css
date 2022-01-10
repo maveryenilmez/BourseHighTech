@@ -147,7 +147,7 @@ li:hover:after {
 }
 
 .landingPage {
-  height: 70vh;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   background: url(/assets/img/unknown3);
@@ -165,11 +165,16 @@ li:hover:after {
   opacity: 0.9;  
 }
 
-#descrip {
+#description {
   /* width: 40%; */
   /* height: 70vh; */
   background: black;
   opacity: 0.9;
+  color: white;
+  font-size: 20px;
+  font-family: "MontSerrat";
+  text-align: center;
+  font-weight: 100px;
 }
 
 
@@ -181,7 +186,7 @@ a {
 @media screen and (min-width: 720px) {
   .socialNetwork {
     height: 150px;
-    width: 150px;
+    width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -193,18 +198,12 @@ a {
     opacity: 0.5;
   }
 }
+
 .insta, .fb, .twit {
   width: 45px;
   height: 45px;
   opacity: 0.5;}
 
-.description{
-  color: white;
-  font-size: 20px;
-  font-family: "MontSerrat";
-  text-align: center;
-  font-weight: 100px;
-}
 
 img.event{
   width: 50%;
