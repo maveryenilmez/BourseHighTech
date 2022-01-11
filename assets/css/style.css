@@ -164,7 +164,6 @@ li:hover:after {
 .logingPage {
   height: 70vh;
   display: flex;
-  justify-content: center;
   background: url(/assets/img/cover.png);
   background-size: cover;
   background-position: center;
