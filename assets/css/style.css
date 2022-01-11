@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-bakcy main {
+.main {
   margin: 0;
   padding: 0;
+  height: 20vh;
 }
 
 body {
@@ -14,14 +15,15 @@ img {
 }
 
 
+
 header {
   height: 30vh;
   display: flex;
   width: 100%;
-  justify-content: center;
-  
 }
-
+.footer{
+height: 30vh;
+}
 .nav{
   display: flex;
   justify-content: space-between;
@@ -147,58 +149,34 @@ li:hover:after {
 }
 
 .landingPage {
-  height: 70vh;
-  display: flex;
   background: url(/assets/img/unknown3);
   background-size: cover;
   background-position: center;
 }
 
-.container1 {
-  width: 50%;
-  height: 70vh;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.container2 {
-  width: 50%;
-  height: 70vh;
-}
-
-
 a {
   text-decoration: none;
   color: white;
   }
-
-  @media screen and (min-width: 720px){
   
-.socialNetwork {
-  height: 150px;
-  width: 150px;
-  align-self: absolute;
-  bottom: 0;
-  left: 0;
-}
   .insta , .fb, .twit{
-  width: 45px;
-  height: 45px;
-  opacity: 0.5;
-}
-}
-.insta , .fb, .twit{
-  margin-right: 0px;
-  width: 45px;
-  height: 45px;
-  opacity: 0.5;
-}
+    margin-right: 0px;
+    width: 45px;
+    height: 45px;
+    opacity: 0.5;
+  }
+  
+  .insta , .fb, .twit{
+    margin-right: 0px;
+    width: 45px;
+    height: 45px;
+    opacity: 0.5;
+  }
 
-
+@media screen and (min-width: 356px){
 #demo {
-  width: 400px;
-  height: 100px;
-  color: #824cff;
+  
+  color: #6aff4c;
   position: absolute;
   font-size: 40px;
   font-family: "Montserrat";
@@ -221,4 +199,27 @@ a {
 
 i{
   color: white;
+}
+}
+
+@media screen and (max-width:720px) {
+  .n1{
+  position: fixed;
+  bottom: 5%;
+  left: 12%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+}
+
+
+@media screen and (min-width:720px) {
+  .n1{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    position: fixed;
+    bottom: 10%;
+  }
 }
