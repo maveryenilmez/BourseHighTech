@@ -33,6 +33,7 @@ h2 {
       color: white;
   }
 }
+/* NAVBAR END */
 
 /* LEFT BLOCK TEXT */
 
@@ -69,6 +70,7 @@ h2 {
     margin-bottom: 50px;
   }
 }
+/* LEFT BLOCK TEXT END */
   
 /* RIGHT BLOCK FORM */
 
@@ -176,3 +178,4 @@ input:hover::placeholder, textarea:hover::placeholder {
 #submit:hover {
   color: white;
 }
+/* RIGHT BLOCK FORM END */
