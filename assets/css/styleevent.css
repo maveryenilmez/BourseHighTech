@@ -14,6 +14,25 @@ body {
 }
 
 
+.navbar-nav {
+  background-color: black;
+}
+.navbar {
+  background-color: black;
+  max-height: 30%;
+}
+
+.nav-link, i {
+  color: white;
+}
+
+@media screen and (max-width: 994px) {
+  .nav-link:hover {
+      background-color: #7ED957;
+      color: white;
+  }
+}
+
 header {
   height: 30vh;
   display: flex;
@@ -222,4 +241,3 @@ color: #7ED957;;
 p{
   color: white;
 }
-
