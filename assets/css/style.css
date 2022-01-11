@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-body main {
+body {
   margin: 0;
   padding: 0;
-}
-
-body {
   background-color: black;
 }
+
 
 img {
   width: 200px;
@@ -163,7 +161,7 @@ li:hover:after {
   }
 }
 
-.landingPage {
+.logingPage {
   height: 70vh;
   display: flex;
   justify-content: center;

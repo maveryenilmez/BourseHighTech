@@ -1,27 +1,187 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-body main {
+body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat";
-}
-
-body {
   background-color: black;
 }
 
+h2 {
+  color: #7ED957;
+  text-align: center;
+  padding-left: 15px;
+}
+
+/* NAVBAR */
+
+/* LEFT BLOCK TEXT */
+
+@media screen and (min-width: 320px) {
+  p{
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  h2{
+    margin-bottom: 20px;
+  }
+
+  .title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+        margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  p{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .title{
+    margin-bottom: 50px;
+  }
+}
+  
+/* RIGHT BLOCK FORM */
+
+@media screen and (min-width: 768px) {
+  #formRegist{
+
+  }
+}
+
+#formRegist {
+  position: relative;
+  width: 90%;
+  height: 672px;
+  font-size: 1em;
+  margin: auto;
+  border: solid 5px #7ED957;
+  border-radius: 30px;
+  box-shadow: 10px 5px 5px #7ED957;
+}
+
+.fix {
+  font-size: 1em;
+  width: 100%;
+  height: 50px;
+  vertical-align: middle;
+  padding: 15px;
+  
+  background: black;
+  color: #7ED957;
+  
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: solid 1px #7ED957;
+  border-collapse: collapse;
+}
+
+input {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: solid 1px #7ED957;
+  border-collapse: collapse;
+  
+  transition: all 0.3s ease-in-out;
+}
+
+.standard {
+  background: black;
+  font-size: 1em;
+  font-style: italic;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  padding: 0px 15px 0px 15px;
+}
+
+.radio {
+  margin-left: 15px;
+}
+
+#companyName {
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+textarea {
+  background: black;
+  
+  color: #7ED957;
+  font-style: italic;
+
+  margin: auto;
+  
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: solid 1px #7ED957;
+  border-collapse: collapse;
+  
+  transition: all 0.3s ease-in-out;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #7ED957;
+}
+
+input:hover, textarea:hover {
+  background: #7ED957;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: white;
+}
+
+.text {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  margin: auto;
+}
+
+#submit {
+  width: 100px;
+  height: 30px;
+
+  text-align: center;
+  padding-top: 3px;
+  
+  font-size: 0.875em;
+  color: #7ED957;
+  
+  cursor: pointer;
+
+  border: dashed 3px #7ED957;
+  border-collapse: collapse;
+  border-radius: 20px;
+}
+
+#submit:hover {
+  color: white;
+}
+
+
+
+/* 
 img {
   width: 200px;
 }
 
 
-header {
-  height: 30vh;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  
-}
 
 .nav{
   display: flex;
@@ -145,33 +305,17 @@ li:hover:after {
     top: -5px;
     right: 0;    
   }
-}
+} */
 
 .landingPage {
   height: 70vh;
   display: flex;
-  background: url(/assets/img/unknown3);
+  background: url(/BourseHighTech/assets/img/cover.png);
   background-size: cover;
   background-position: center;
 }
 
-.container1 {
-  width: 50%;
-  height: 70vh;
-  background: black;
-  opacity: 0.9;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.container2 {
-  width: 50%;
-  height: 70vh;
-  background: black;
-  opacity: 0.9;
-}
-
-
+/* 
 a {
   text-decoration: none;
   color: white;
@@ -199,152 +343,4 @@ a {
   width: 45px;
   height: 45px;
   opacity: 0.5;
-}
-
-/* Ajout css Formulaire */
-
-.formHeader {
-  color: #7ED957;
-  position: relative;
-  height: 50px;
-  padding-bottom: 50px;
-  margin: auto;
-  font-size: 2.3em;
-  text-align: center;
-  letter-spacing: 7px;
-}
-
-#formRegist {
-  position: relative;
-  width: 500px;
-  height: 672px;
-  margin: auto;
-  border: solid 5px #7ED957;
-  border-radius: 30px;
-  box-shadow: 10px 5px 5px #7ED957;
-}
-
-.fix {
-  font-size: 0.875em;
-  width: 470px;
-  height: 20px;
-  vertical-align: middle;
-  margin: auto;
-  padding: 15px;
-  
-  background: black;
-  color: #7ED957;
-  
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  border-bottom: solid 1px #7ED957;
-  border-collapse: collapse;
-}
-
-input {
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  border-bottom: solid 1px #7ED957;
-  border-collapse: collapse;
-  
-  transition: all 0.3s ease-in-out;
-}
-
-.standard {
-  background: black;
-  font-size: 0.775em;
-  font-style: italic;
-  width: 470px;
-  height: 50px;
-  margin: auto;
-  padding: 0px 15px 0px 15px;
-}
-
-.radio {
-  margin-left: 15px;
-}
-
-#companyName {
-border-top-left-radius: 20px;
-border-top-right-radius: 20px;
-}
-
-textarea {
-  background: black;
-  
-  color: #7ED957;
-  font-style: italic;
-
-  margin: auto;
-  
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  border-bottom: solid 1px #7ED957;
-  border-collapse: collapse;
-  
-  transition: all 0.3s ease-in-out;
-}
-
-input::placeholder, textarea::placeholder {
-  color: #7ED957;
-}
-
-input:hover, textarea:hover {
-  background: #7ED957;
-}
-
-input:hover::placeholder, textarea:hover::placeholder {
-  color: white;
-}
-
-.text {
-  width: 470px;
-  max-width: 470px;
-  height: 110px;
-  max-height: 110px;
-  padding: 15px;
-  margin: auto;
-}
-
-#submit {
-  width: 100px;
-  height: 30px;
-  margin: 15px 0px 0px 195px;
-  text-align: center;
-  padding-top: 3px;
-  
-  font-size: 0.875em;
-  color: #7ED957;
-  
-  cursor: pointer;
-
-  border: dashed 3px #7ED957;
-  border-collapse: collapse;
-  border-radius: 20px;
-}
-
-#submit:hover {
-  color: white;
-}
-
-/* Ajout css Texte */
-
-h2 {
-  color: #7ED957;
-  text-align: center;
-  padding-left: 15px;
-  font-size: 30px;
-}
-
-p {
-  color: white;
-  padding-left: 15px;
-  font-size: 20px;
-}
-
-.text2 {
-  width: 100%;
-}
+} */
