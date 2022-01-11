@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,105 @@
     <title>HTB</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+    <!-- NAVBAR  -->
+    <header>
+        <img src="/assets/img/Bourse carré.png" alt="">
+        <section class="nav">
+            <li class="home"><a href="index.html">Accueil</a></li>
+            <li class="event"><a href="indexevent.html">Événement</a></li>
+            <li class="contact"><a href="indexcontact.html">Contact</a></li>
+            <li class="connection"><a href="indexlogin.html">Signup/Login</a></li>
+    </header>
+
     <main>
-            <header>
-                <img src="/assets/img/Bourse carré.png" alt="">
-                <section class="nav">
-                    <li class="home"><a href="index.html">Accueil</a></li>
-                    <li class="event"><a href="indexevent.html">Événement</a></li>
-                    <li class="contact"><a href="indexcontact.html">Contact</a></li>
-                    <li class="connection"><a href="indexlogin.html">Signup/Login</a></li>
-            </header>
-            <section class="landingPage">
-                <div class="container1">
-                    <div class="textTime">
-                        <h2>Début de l'événement dans <strong>&rarr;</strong></h2>
+        <!-- CONTENUE DE LA PAGE ACCUEIL -->
+        <section class="landingPage">
+            <div class="container1">
+                <div class="textTime">
+                    <h2>Début de l'événement dans <strong>&rarr;</strong></h2>
+                </div>
+
+                <!-- LES RESEAUX SOCIAUX  -->
+                <div class="socialNetwork">
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/hightechlamanu/" target="_blank">
+                            <img class="insta" src="assets/img/icons8-instagram-48.png" alt="">
+                        </a>
                     </div>
+                    <div class="facebook">
+                        <a href="https://www.facebook.com/people/Hightech-Bourses/100075902067257/" target="_blank">
+                            <img class="fb" src="assets/img/icons8-facebook-48.png" alt="">
+                        </a>
+                    </div>
+                    <div class="twitter">
+                        <a href="https://twitter.com/?lang=fr" target="_blank">
+                            <img class="twit" src="assets/img/icons8-twitter-48.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- FIN RESEAUX SOCIAUX -->
+            </div>
+            <div class="container2">
+                <div id="demo"></div>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Date à laquelle le compte a rebour doit s'arrêter 
+        var countDownDate = new Date("dec 23, 2021 08:00:00").getTime();
+
+        // Mise à jour du compte à rebour toutes les 1 seconde
+        var x = setInterval(function () {
+
+            // récuperer la date et l'heure d'aujourd'hui 
+            var now = new Date().getTime();
+
+            // Trouver la distance entre maintenant et la date du compte à rebours
+            var distance = countDownDate - now;
+
+            // Calculs de temps pour les jours, heures, minutes et secondes
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Affiche le résultat dans un élément avec id="demo"
+            document.getElementById("demo").innerHTML = days + "j " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+
+            // Si le compte à rebours est terminé, écrivez du texte
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+
+    <footer>
+        <!--  les liens réseaux sociaux en bas de page et onglet identique à tous les pages-->
+        <!-- <div class="container">
+            <div class="row pt-5">
+                <div class="col-4 col-md-4">
                     <div class="socialNetwork">
+
                         <div class="instagram">
                             <a href="https://www.instagram.com/hightechlamanu/" target="_blank">
                                 <img class="insta" src="assets/img/icons8-instagram-48.png" alt="">
                             </a>
                         </div>
+                    </div>
+
+                    <div class="col-4 col-md-4">
                         <div class="facebook">
                             <a href="https://www.facebook.com/people/Hightech-Bourses/100075902067257/" target="_blank">
                                 <img class="fb" src="assets/img/icons8-facebook-48.png" alt="">
                             </a>
                         </div>
+                    </div>
+
+                    <div class="col-4 col-md-4">
                         <div class="twitter">
                             <a href="https://twitter.com/?lang=fr" target="_blank">
                                 <img class="twit" src="assets/img/icons8-twitter-48.png" alt="">
@@ -40,40 +114,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="container2">
-                    <div id="demo"></div>
-                </div>
-            </section>
-    </main>
-    <script>
-          // Date à laquelle le compte a rebour doit s'arrêter 
-          var countDownDate = new Date("dec 23, 2021 08:00:00").getTime();
-
-// Mise à jour du compte à rebour toutes les 1 seconde
-var x = setInterval(function() {
-
-// récuperer la date et l'heure d'aujourd'hui 
-var now = new Date().getTime();
-
-// Trouver la distance entre maintenant et la date du compte à rebours
-var distance = countDownDate - now;
-
-// Calculs de temps pour les jours, heures, minutes et secondes
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-// Affiche le résultat dans un élément avec id="demo"
-document.getElementById("demo").innerHTML = days + "j " + hours + "h "
-+ minutes + "m " + seconds + "s ";
-
-// Si le compte à rebours est terminé, écrivez du texte
-if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-}
-}, 1000);
-    </script>
+            </div>
+        </div> -->
+        <!-- fin d'onglet "reseaux sociaux" -->
+    </footer>
 </body>
+
 </html>
