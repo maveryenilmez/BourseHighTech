@@ -1,0 +1,219 @@
+.title2, h3, p, i  {
+    color: white;
+}
+
+h1, h2 {
+    color: #7ED957;
+}
+
+.title2 {
+    text-decoration: underline #7ED957;
+}
+
+/* Form */
+.formContact {
+    border: solid 5px #7ED957;
+    border-radius: 30px;
+    box-shadow: 10px 5px 5px #7ED957;
+    height: auto;
+}
+
+.button {
+    background-color: white;
+    color: #7ED957;
+    cursor: pointer;
+    border: dashed 3px #7ED957;
+    border-radius: 20px;
+}
+
+.button:hover {
+    color: white;
+    background-color: #7ED957;
+    border: dashed 3px #7ED957
+}
+
+.form-control {
+    background: black;
+    color: #7ED957;
+    font-style: italic;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: solid 1px #7ED957;
+    border-collapse: collapse;
+    transition: all 0.3s ease-in-out;
+    height: auto;
+}
+
+input::placeholder, .form-control::placeholder {
+    color: #7ED957;
+}
+
+input:hover, .form-control:hover {
+    background: #7ED957;
+}
+
+input:hover::placeholder, .form-control:hover::placeholder {
+    color: white;
+}
+/* Form */
+/* effect navbar sm and lg expand */
+@media screen and (min-width: 992px) {
+    body main {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    }
+    
+    body, .navbar  {
+    background-color: black;
+    }
+    
+    header {
+    height: 30vh;
+    display: flex;
+    width: 100%;
+    }
+    
+    .navbar-nav {
+    width: 100%;
+    }
+    
+    .nav-link, i, .nav-link:hover {
+    color: white;
+    }
+    
+    .hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    background: black;
+    border-radius: 75px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    transition: 1s box-shadow;
+    color: white;
+    }
+
+    .hover:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+    }
+
+    .hover:hover::before, .hover:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: #6aff4c;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+    }
+
+    .hover:hover:after {
+    background: #72f8b5;
+    animation: 2s counterclockwise infinite;
+    }
+
+    @keyframes clockwise {
+        0% {
+        top: -5px;
+        left: 0;
+    }
+        12% {
+        top: -2px;
+        left: 2px;
+    }
+        25% {
+        top: 0;
+        left: 5px;    
+    }
+        37% {
+        top: 2px;
+        left: 2px;
+    }
+        50% {
+        top: 5px;
+        left: 0;    
+    }
+        62% {
+        top: 2px;
+        left: -2px;
+    }
+        75% {
+        top: 0;
+        left: -5px;
+    }
+        87% {
+        top: -2px;
+        left: -2px;
+    }
+        100% {
+        top: -5px;
+        left: 0;    
+    }
+    }
+    
+    @keyframes counterclockwise {
+        0% {
+        top: -5px;
+        right: 0;
+    }
+        12% {
+        top: -2px;
+        right: 2px;
+    }
+        25% {
+        top: 0;
+        right: 5px;    
+    }
+        37% {
+        top: 2px;
+        right: 2px;
+    }
+        50% {
+        top: 5px;
+        right: 0;    
+    }
+        62% {
+        top: 2px;
+        right: -2px;
+    }
+        75% {
+        top: 0;
+        right: -5px;
+    }
+        87% {
+        top: -2px;
+        right: -2px;
+    }
+        100% {
+        top: -5px;
+        right: 0;    
+    }
+    }
+    }
+    @media screen and (max-width: 992px) {
+    body, .hover {
+    background-color: black;
+    }
+    
+    .nav-link, i {
+    color: white !important;
+    text-align: center;
+    }
+    
+    .hover:hover {
+    background-color: #6aff4c;
+    color: white !important;
+    }
+    }
+/* effect navbar sm and lg expand */
+
