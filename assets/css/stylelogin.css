@@ -12,6 +12,11 @@ h2 {
     margin: 0;
     padding: 0;
     font-family: "Montserrat";
+    overflow-x: hidden !important;
+  }
+  .container{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
   }
 
   body, .navbar {
@@ -154,6 +159,11 @@ h2 {
   body, .hover {
 background-color: black;
 font-family: "Montserrat";
+overflow-x: hidden !important;
+}
+.container{
+  max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 
   .nav-link, i {
