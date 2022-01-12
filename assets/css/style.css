@@ -2,7 +2,7 @@
 
 body {
   height: 100vh;
-  width: 100vw;
+  width:auto;
 }
 
 .main {
@@ -11,15 +11,17 @@ body {
   height: 20vh;
 }
 
+@media screen and (min-width: 346px) {
 .backgroundBack {
   background-image: url(/assets/img/cover.png);
   margin: 0;
   background-size: cover;
+  
+  background-repeat: no-repeat;
   height: 100%;
-
-
+  text-align: center;
 }
-
+}
 img {
   width: 200px;
 }
@@ -33,6 +35,8 @@ img {
 .navbar {
   background-color: black;
   max-height: 30%;
+  position: fixed;
+  right: 20%;
 }
 
 .nav-link,
@@ -68,20 +72,20 @@ a {
   #demo {
 
     color: #6aff4c;
-    position: absolute;
-    font-size: 40px;
+    position:relative;
+    font-size: 25px;
     font-family: "Montserrat";
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 20px;
     border: 5px solid white;
   }
 
   .textTime {
     font-size: 20px;
-    color: #7ED957;
+    color: #6aff4c;
     display: flex;
     width: 100%;
     margin-left: 100px;
@@ -110,7 +114,7 @@ a {
     display: flex;
     justify-content: start;
     flex-direction: column;
-    position: fixed;
+    position: fixed right;
     bottom: 10%;
   }
 }
