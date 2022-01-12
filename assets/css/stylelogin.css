@@ -89,6 +89,7 @@ h2 {
   font-size: 1em;
   width: 100%;
   height: 50px;
+  font-style: italic;
   vertical-align: middle;
   padding: 15px;
   background: black;
@@ -111,6 +112,7 @@ input {
 
 .standard {
   background: black;
+  color: #FFFFFF;
   font-size: 1em;
   font-style: italic;
   width: 100%;
