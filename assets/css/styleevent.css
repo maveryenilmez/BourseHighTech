@@ -223,25 +223,39 @@ a {
   align-self: flex-end; */
 
   
-@media screen and (max-width:992px) {
-  .n1 {
-    bottom: 5%;
-    left: 1%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+  @media screen and (max-width:992px) {
+    .n1 {
+      bottom: 5%;
+      left: 1%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+    }
   }
-}
-
-
-@media screen and (min-width:992px) {
-  .n1 {
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    bottom: 10%;
+  
+  @media screen and (min-width:992px){
+    .container1{
+      margin-left: 60px;
+    }
+    .insta {
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+      bottom: 10%;
+    }
+    .fb {
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+      bottom: 10%;
+    }
+    .twit {
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+      bottom: 10%;
+    }
   }
-}
 
 img.event{
   width: 50%;
