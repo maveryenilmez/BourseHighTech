@@ -13,7 +13,7 @@ body {
 
 @media screen and (min-width: 346px) {
 .backgroundBack {
-  background-image: url(/assets/img/cover.png);
+  background-image: url(assets/img/cover.png);
   margin: 0;
   background-size: cover;
   
