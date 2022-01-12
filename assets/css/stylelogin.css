@@ -205,7 +205,9 @@ textarea:hover::placeholder {
 
 }
 
-@media screen and (max-width:720px) {
+
+/* VERSION MOBILE */
+@media screen and (max-width:992px) {
   .n1 {
     bottom: 5%;
     left: 1%;
@@ -215,8 +217,8 @@ textarea:hover::placeholder {
   }
 }
 
-
-@media screen and (min-width:720px) {
+/* VERSION ORDINATEUR */
+@media screen and (min-width:992px) {
   .n1 {
     display: flex;
     justify-content: start;
