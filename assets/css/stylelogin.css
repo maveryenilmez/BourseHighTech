@@ -13,8 +13,9 @@ h2 {
   padding-left: 15px;
 }
 
-/* NAVBAR */
 
+
+/* NAVBAR */
 .navbar-nav {
   background-color: black;
 }
@@ -27,7 +28,7 @@ h2 {
   color: white;
 }
 
-@media screen and (max-width: 994px) {
+@media screen and (max-width: 992px) {
   .nav-link:hover {
       background-color: #7ED957;
       color: white;
@@ -36,7 +37,6 @@ h2 {
 /* NAVBAR END */
 
 /* LEFT BLOCK TEXT */
-
 @media screen and (min-width: 320px) {
   p{
     color: white;
@@ -52,7 +52,7 @@ h2 {
   .title{
     margin-top: 50px;
     margin-bottom: 50px;
-        margin-left: 20px;
+    margin-left: 20px;
     margin-right: 20px;
   }
 }
@@ -73,7 +73,6 @@ h2 {
 /* LEFT BLOCK TEXT END */
   
 /* RIGHT BLOCK FORM */
-
 #formRegist {
   position: relative;
   width: 90%;
@@ -181,3 +180,56 @@ input:hover::placeholder, textarea:hover::placeholder {
   color: white;
 }
 /* RIGHT BLOCK FORM END */
+
+/* FOOTER SOCIAL MEDIAS */
+.insta,
+.fb,
+.twit {
+  margin-right: 0px;
+  width: 45px;
+  height: 45px;
+  opacity: 0.5;
+}
+
+.socialNetwork {
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (max-width:992px) {
+  .n1 {
+    bottom: 5%;
+    left: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width:992px){
+  .container1{
+    margin-left: 60px;
+  }
+  .insta {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    bottom: 10%;
+  }
+  .fb {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    bottom: 10%;
+  }
+  .twit {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    bottom: 10%;
+  }
+}
+/* FOOTER SOCIAL MEDIAS END */ 
