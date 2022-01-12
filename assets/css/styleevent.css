@@ -199,7 +199,15 @@ a {
   color: white;
   }
 
-@media screen and (min-width: 992px) {
+
+  /* ICONS RESEAUX SOCIAUX */
+
+.insta, .fb, .twit {
+  margin-right: 0px;
+  width: 45px;
+  height: 45px;
+  opacity: 0.5;}
+
   .socialNetwork {
     height: 150px;
     width: 100%;
@@ -208,18 +216,27 @@ a {
     left: 0;
     
   }
-  .insta, .fb, .twit {
-    width: 45px;
-    height: 45px;
-    opacity: 0.5;
+
+  
+@media screen and (max-width:720px) {
+  .n1 {
+    bottom: 5%;
+    left: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
   }
 }
 
-.insta, .fb, .twit {
-  width: 45px;
-  height: 45px;
-  opacity: 0.5;}
 
+@media screen and (min-width:720px) {
+  .n1 {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    bottom: 10%;
+  }
+}
 
 img.event{
   width: 50%;
@@ -230,6 +247,8 @@ img.event{
   margin-left: 150px;
   margin-top: 75px;
 }
+
+  /* fin ICONS RESEAUX SOCIAUX */
 
 strong {
 color: #7ED957;;

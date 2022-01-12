@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
 .main {
   margin: 0;
   padding: 0;
   height: 20vh;
 }
 
-.backgroundBack{
+.backgroundBack {
   background-image: url(/assets/img/cover.png);
   margin: 0;
   background-size: cover;
   height: 100%;
-  
+
 
 }
 
@@ -24,85 +29,84 @@ img {
 .navbar-nav {
   background-color: black;
 }
+
 .navbar {
   background-color: black;
   max-height: 30%;
 }
 
-.nav-link, i {
+.nav-link,
+i {
   color: white;
 }
 
 @media screen and (max-width: 994px) {
   .nav-link:hover {
-      background-color: #7ED957;
-      color: white;
+    background-color: #7ED957;
+    color: white;
   }
 }
+
 /* FIN NAVBAR */
 
 a {
   text-decoration: none;
   color: white;
-  }
-  
-  .insta , .fb, .twit{
-    margin-right: 0px;
-    width: 45px;
-    height: 45px;
-    opacity: 0.5;
-  }
-  
-  .insta , .fb, .twit{
-    margin-right: 0px;
-    width: 45px;
-    height: 45px;
-    opacity: 0.5;
-  }
-
-@media screen and (min-width: 356px){
-#demo {
-  
-  color: #6aff4c;
-  position: absolute;
-  font-size: 40px;
-  font-family: "Montserrat";
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  border: 5px solid white;
 }
 
-.textTime {
-  font-size: 20px;
-  color: #7ED957;
-  display: flex;
-  width: 100%;
-  margin-left: 100px;
-  margin-top: 10px;
+.insta,
+.fb,
+.twit {
+  margin-right: 0px;
+  width: 45px;
+  height: 45px;
+  opacity: 0.5;
 }
 
-i{
-  color: white;
-}
+
+@media screen and (min-width: 356px) {
+  #demo {
+
+    color: #6aff4c;
+    position: absolute;
+    font-size: 40px;
+    font-family: "Montserrat";
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 5px solid white;
+  }
+
+  .textTime {
+    font-size: 20px;
+    color: #7ED957;
+    display: flex;
+    width: 100%;
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+
+  i {
+    color: white;
+  }
 }
 
 @media screen and (max-width:720px) {
-  .n1{
-  position: fixed;
-  bottom: 5%;
-  left: 1%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-}
+  .n1 {
+    position: fixed;
+    bottom: 5%;
+    left: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
 }
 
 
 @media screen and (min-width:720px) {
-  .n1{
+  .n1 {
     display: flex;
     justify-content: start;
     flex-direction: column;
