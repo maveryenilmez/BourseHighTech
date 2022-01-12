@@ -216,6 +216,11 @@ a {
     left: 0;
     
   }
+/* 
+  .socialNetwork {
+  height: 150px;
+  width: 100%;
+  align-self: flex-end; */
 
   
 @media screen and (max-width:720px) {
