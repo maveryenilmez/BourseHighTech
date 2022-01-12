@@ -8,7 +8,6 @@ h2 {
 
 /* NAVBAR */
 @media screen and (min-width: 992px) {
-
   body {
     margin: 0;
     padding: 0;
@@ -150,9 +149,11 @@ h2 {
     }
   }
 }
+
 @media screen and (max-width: 992px) {
-body, .hover {
+  body, .hover {
 background-color: black;
+font-family: "Montserrat";
 }
 
   .nav-link, i {
