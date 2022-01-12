@@ -13,8 +13,9 @@ h2 {
   padding-left: 15px;
 }
 
-/* NAVBAR */
 
+
+/* NAVBAR */
 .navbar-nav {
   background-color: black;
 }
@@ -29,15 +30,15 @@ i {
   color: white;
 }
 
-@media screen and (max-width: 994px) {
+@media screen and (max-width: 992px) {
   .nav-link:hover {
     background-color: #7ED957;
     color: white;
   }
 }
+/* NAVBAR END */
 
 /* LEFT BLOCK TEXT */
-
 @media screen and (min-width: 320px) {
   p {
     color: white;
@@ -71,9 +72,9 @@ i {
     margin-bottom: 50px;
   }
 }
-
+/* LEFT BLOCK TEXT END */
+  
 /* RIGHT BLOCK FORM */
-
 #formRegist {
   position: relative;
   width: 90%;
@@ -89,6 +90,7 @@ i {
   font-size: 1em;
   width: 100%;
   height: 50px;
+  font-style: italic;
   vertical-align: middle;
   padding: 15px;
   background: black;
@@ -111,6 +113,7 @@ input {
 
 .standard {
   background: black;
+  color: #FFFFFF;
   font-size: 1em;
   font-style: italic;
   width: 100%;
@@ -181,12 +184,9 @@ textarea:hover::placeholder {
 #submit:hover {
   color: white;
 }
+/* RIGHT BLOCK FORM END */
 
-
-
-
-/* ICONS RESEAUX SOCIAUX */
-
+/* FOOTER SOCIAL MEDIAS */
 .insta,
 .fb,
 .twit {
@@ -202,11 +202,8 @@ textarea:hover::placeholder {
   position: absolute;
   bottom: 0;
   left: 0;
-
 }
 
-
-/* VERSION MOBILE */
 @media screen and (max-width:992px) {
   .n1 {
     bottom: 5%;
@@ -217,24 +214,27 @@ textarea:hover::placeholder {
   }
 }
 
-/* VERSION ORDINATEUR */
-@media screen and (min-width:992px) {
-  .n1 {
+@media screen and (min-width:992px){
+  .container1{
+    margin-left: 60px;
+  }
+  .insta {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    bottom: 10%;
+  }
+  .fb {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    bottom: 10%;
+  }
+  .twit {
     display: flex;
     justify-content: start;
     flex-direction: column;
     bottom: 10%;
   }
 }
-
-img.event {
-  width: 50%;
-  height: 300px;
-  object-fit: cover;
-  border: 5px solid white;
-  border-radius: 15px;
-  margin-left: 150px;
-  margin-top: 75px;
-}
-
-/* fin ICONS RESEAUX SOCIAUX */
+/* FOOTER SOCIAL MEDIAS END */ 
