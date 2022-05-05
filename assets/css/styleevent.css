@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow-x: hidden !important;
+}
 
 /* NAVBAR */
 
@@ -9,6 +16,7 @@
     margin: 0;
     padding: 0;
     font-family: "Montserrat";
+    overflow-x: hidden !important;
   }
 
   body,
@@ -44,7 +52,7 @@
     background: black;
     border-radius: 75px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: lighter;
     letter-spacing: 2px;
     transition: 1s box-shadow;
@@ -171,6 +179,7 @@
 @media screen and (max-width: 992px){
   body, .hover {
     background-color: black;
+    overflow-x: hidden !important;
   }
 
   .nav-link, i {
@@ -212,10 +221,9 @@
   background: black;
   opacity: 0.9;
   color: white;
-  font-size: 20px;
+  font-size: 1em;
   font-family: "MontSerrat";
   text-align: center;
-  font-weight: 100px;
 }
 
 
@@ -263,9 +271,6 @@ a {
 }
 
 @media screen and (min-width:992px) {
-  .container1 {
-    margin-left: 60px;
-  }
 
   .insta {
     display: flex;
